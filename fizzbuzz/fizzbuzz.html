@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+		<head>
+			<title></title>
+		</head>
+		<body>
+			<script type="text/javascript">
+				//display 1-100
+				//if number is divisible by 3 diaplay fizz
+				//if number is divisible by 5 display buzz
+				//if number is divisible by 3 and 5 display fizzbuzz
+				//if none of the above display the nnumber
+
+
+					var i = 1;
+					while(i <= 100){
+						if(i%3 == 0 && i%5 == 0){
+							console.log('fizzbuzz');
+						}else if(i%5 == 0){
+							console.log('buzz');
+						}else if(i%3 == 0){
+							console.log('fizzbuz');
+						}else{
+							console.log(i);
+						}
+						i++;
+					}
+			</script>
+
+		</body>
+</html>
