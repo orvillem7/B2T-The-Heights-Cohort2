@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1 id="thefruit"></h1>
+	<script type="text/javascript">
+		//create empty html text element
+		//use prompt("addmore fruit") to add an element to the end of an array
+		//sort the elements
+		//display elements seperated by "with" in html text element
+
+				var fruits = ["Apple", "Orange", "Kiwi"];
+				var moreFruits = prompt("Add more fruit here");
+				fruits.push(moreFruits.toLowerCase());
+				console.log(fruits);
+				var joinedFruits = fruits.sort();
+				var reveal = joinedFruits.join(" with ");
+
+
+				document.getElementById("thefruit").innerHTML = reveal;
+	</script>
+
+</body>
+</html>
