@@ -1,0 +1,24 @@
+		<!DOCTYPE html>
+		<html>
+		<head>
+			<title></title>
+		</head>
+		<body>
+			<form action="index.html" method="post">
+				First name: <input type="text" id="fname" value="Curtis">
+				Last name: <input type="text" id="lname" value="Jackson">
+				<input type="button" value="submit" onclick="getFormValue()">
+				
+			</form>
+			<h1 id="displayfull"></h1>
+			<script type="text/javascript">
+				function getFormValue(){
+					var firstName = document.getElementById('').value;
+					var lastName = document.getElementById('').value;
+					var fullName = firstName + '' + lastName;
+					document.getElementById('displayFull').innerHTml = ('hello ' + fullName);
+				}
+			</script>
+
+		</body>
+		</html>
