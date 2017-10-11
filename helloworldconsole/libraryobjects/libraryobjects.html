@@ -1,0 +1,29 @@
+		<!DOCTYPE html>
+		<html>
+		<head>
+			<title></title>
+		</head>
+		<body>
+			<h1 id="display"></h1>
+			<script type="text/javascript">
+				//if the reading status is true display "already read '<insert title>'by<insert author>"
+				//if the reading status is false display "you still need to read '<insert title>' by <insert author>"
+				//display results on webpage
+				var library = [
+				{author: 'Bill Gates', title: ' The Road Ahead ', readingStatus: true},
+				{author: 'Steve jobs', title: 'Walter Isaacson ', readingStatus: true},
+				{author: 'suzanne collins', title: 'Mockingjay The Final Book of The hunger Games', readingStatus: false}
+					];
+					for(var i in library){
+						if(library[i].readingStatus == true){
+							document.getElementById('display').innerHTML += (' Already read ' + library[i].title + ' by ' + library[i].author + '<br/>');
+						}else{
+							document.getElementById('display').innerHTML += (' You still need to read ' + library[i].title + ' by ' + library + '<br/>');
+						}
+						}
+					
+			</script>
+
+
+		</body>
+		</html>

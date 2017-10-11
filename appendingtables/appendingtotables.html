@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<table id="myTable" border="1">
+		<tr>
+			<td>Clifford</td>
+			<td>Harris</td>
+		</tr>
+	</table>
+	<br>
+	<form>
+		First name: <input type="text" id="col1" value="curtis">
+		Last name: <input type="text" id="col2" value="jackson">
+		
+	</form>
+	<br>
+	<input type="button" onclick="insertRow()" value="Insert Row">
+	<script type="text/javascript">
+		function insertRow(){
+			var firstName = document.getElementById('col1').value;
+			var lastName = document.getElementById('col2').value;
+			var secondtr = document.createElement('tr');
+			document.getElementById('myTable').appendchild(secondTr);
+			var firstTd = document.createElement('td');
+			var secondTd = document.createElement('td');
+			firstTd.innerHTML = firstName;
+			secondTd.innerHTML = lastName;
+			secondTr.appendchild(firstTd);
+			secondTr.appendchild(secondTd);
+
+		}
+		
+	</script>
+
+</body>
+</html>
