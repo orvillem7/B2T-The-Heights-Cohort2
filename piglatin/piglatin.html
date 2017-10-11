@@ -1,0 +1,24 @@
+			<!DOCTYPE html>
+			<html>
+			<head>
+				<title></title>
+			</head>
+			<body>
+				<h1>This is Pig Latin</h1>
+				<h1 id="pig"></h1>
+				<script type="text/javascript">
+					var word = prompt("lets play some pig latin give me a word")
+					if(word.charAt(0) == ("A") || word.charAt(0) == ("E") || word.charAt(0) == ("I") || word.charAt(0) == ("O") || word.charAt(0) ==("U")){
+						alert("Word cannot being with vowel, retry")
+
+
+					}else{
+						var first = word.charAt(0);
+						var rest = word.substr(1,(word.length - 1));
+						var latin = rest.toLowerCase() + first.toLowerCase() + "ay";
+						document.getElementById("pig").innerHTML = latin;
+					}
+				</script>
+
+			</body>
+			</html>
